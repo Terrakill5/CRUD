@@ -29,8 +29,7 @@ export default defineComponent({
   },
   methods: {
     async saveTask() {
-      const res = await createTask(this.task);
-      console.log(res);
+      await createTask(this.task);
       this.$router.push({name: "tasks"});
     },
   },

@@ -20,5 +20,8 @@ app.use("/api", taskRoutes);
 primero debe incluir "/api" para que pueda ver el 
 modulo, caso contrario dara error*/
 
-app.use(express.static(path.join(__dirname,"..","..", "dist")))
+app.use(express.static(path.join(__dirname,"..","..", "dist")));
+app.get("/*", (req,res) => {
+    res.sendFile(path.join(__dirname,"..","..", "dist", "index.html"));
+})
 export default app;
