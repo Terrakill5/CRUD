@@ -9,6 +9,7 @@
     "start": "npm start --prefix server"
   },
   "dependencies": {
+    "@types/mongoose": "^5.11.97",
     "axios": "^0.27.2",
     "bootswatch": "^5.2.1",
     "core-js": "^3.8.3",
